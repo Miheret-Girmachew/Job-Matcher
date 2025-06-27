@@ -66,25 +66,13 @@ The system was trained and evaluated on `resume_dataset.csv`, a publicly availab
 5. **Evaluation:** Assessed using accuracy, precision, recall, F1-score (per-class, macro, weighted), and confusion matrix.
 6. **Application Development:** A Streamlit app (`app.py`) was built to deploy the trained model for interactive screening.
 
-## 📊 Performance Highlights (Logistic Regression)
-
-* **Cross-Validation F1-Macro Score:** 0.7418
-* **Training Set F1-Macro Score:** 1.0000 (Indicates overfitting due to small dataset)
-* **Training Set Accuracy:** 1.0000
-* **Test Set F1-Macro Score:** 0.8507
-* **Test Set Accuracy:** 86.05%
-* **Test Set Weighted Avg F1-Score:** 0.8372
-
-While achieving high overall accuracy and F1-macro on the test set, performance varied across categories, with some underrepresented classes (e.g., "Health and fitness," "Testing") achieving an F1-score of 0.00 due to data scarcity and potential ambiguity.
-
----
 
 ## 🔧 Setup and Installation
 
 1. **Clone the repository (if applicable):**
     ```bash
-    git clone <your-repository-url>
-    cd Resume-Screening 
+    git clone https://github.com/Miheret-Girmachew/Job-Matcher
+    cd Job-Matcher
     ```
 
 2. **Create and activate a Python virtual environment:**
@@ -100,7 +88,6 @@ While achieving high overall accuracy and F1-macro on the test set, performance 
     ```bash
     pip install -r requirements.txt
     ```
-    *(Ensure your `requirements.txt` is comprehensive. Generate it via `pip freeze > requirements.txt` from your activated venv.)*
 
 4. **NLTK Resource Setup:**
     The project utilizes a local `nltk_data_local` directory for NLTK resources (stopwords, punkt, wordnet, omw-1.4).
